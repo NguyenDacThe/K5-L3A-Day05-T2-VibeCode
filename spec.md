@@ -8,8 +8,6 @@
 | Trần Quốc Đông | 2A202603643 | Bổ sung dự thảo §3, §6 và vị trí chú thích UX bàn giao cho §5; chưa kiểm prototype. |
 | Nguyễn Đắc Thể | 2A202603529 | Thực hiện phần Người 3 với hỗ trợ AI: dựng prototype HTML/CSS/JS hai màn, chụp hai ảnh thật, viết §5 và kịch bản §7, tích hợp bài; chạy kiểm tự động trên Chrome và rà mâu thuẫn giữa các phần. |
 
-> §1, §2, §4 giữ lập luận đề xuất của Người 1; §3 và ba tiêu chí §6 giữ thiết kế của Người 2. Người 3 đã triển khai và kiểm prototype theo **giả định dự thảo S05/S03 và ma trận §4**, bổ sung §5, kết quả kiểm tự động §6 và kế hoạch §7. Theo yêu cầu của Nguyễn Đắc Thể, bảng lựa chọn quyền §4 đã được điền đủ cho ba thành viên dưới dạng phương án tổng hợp. Chưa có dữ liệu nhóm họp chốt M1/M2 hay sự kiện demo; tên nhóm, xác nhận lựa chọn độc lập và kết quả demo cần được đối chiếu với thực tế.
-
 ## §1. Lát cắt & phạm vi
 
 > Trong **trợ lý học bài của trang khoá học (kiểu ChatGPT Study mode)**, khi **học viên** đang hỏi bài lúc tối muộn, khi không còn ai để hỏi, **AI giảng kèm trích tài liệu, hỏi lại cho rõ, gợi ý từng bước, hay nói thẳng "tài liệu không có, hỏi giảng viên"**, để học viên hiểu đúng bài mình đang học, không chép đáp án, không học sai mà không biết.
