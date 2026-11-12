@@ -1,0 +1,67 @@
+{
+  "executedAt": "2026-11-12T08:40:56.141Z",
+  "timezone": "Asia/Saigon",
+  "scope": "Kiểm cấu trúc, liên kết, fixture và dẫn chứng; không chứng minh ngữ nghĩa toàn bộ spec hay sự kiện nhóm.",
+  "results": [
+    {
+      "id": "SPEC-STRUCTURE",
+      "description": "Đủ duy nhất §1–§7 đúng thứ tự",
+      "result": "Pass"
+    },
+    {
+      "id": "METADATA",
+      "description": "L3A, Zone 1 và tên/mã Người 3 đúng thông tin người dùng",
+      "result": "Pass"
+    },
+    {
+      "id": "SLICE",
+      "description": "Giữ nguyên lát cắt T2 của đề",
+      "result": "Pass"
+    },
+    {
+      "id": "SCENARIOS",
+      "description": "Có S01–S10 duy nhất trong bảng §2, phủ bốn lớp rủi ro",
+      "result": "Pass"
+    },
+    {
+      "id": "TOOLS",
+      "description": "Ma trận §4 có đúng bốn tool gốc; implementation dùng cùng mã",
+      "result": "Pass"
+    },
+    {
+      "id": "CRITERIA",
+      "description": "Giữ đúng ba tiêu chí C1/C2/C3 và đủ sáu ô chấm hai ca",
+      "result": "Pass"
+    },
+    {
+      "id": "FIXTURES",
+      "description": "Toàn bộ §3.1–§3.5 khớp nguyên dữ liệu hướng dẫn, kể cả câu sai",
+      "result": "Pass"
+    },
+    {
+      "id": "UX-MARKERS",
+      "description": "Bốn số UX01–UX04 tồn tại trên HTML và được giải thích ở §5",
+      "result": "Pass"
+    },
+    {
+      "id": "IMAGES",
+      "description": "Chính xác hai ảnh được nhúng ở §5, file PNG thật 1440×1500",
+      "result": "Pass"
+    },
+    {
+      "id": "LINKS",
+      "description": "Mọi liên kết Markdown nội bộ của bài và bàn giao tồn tại",
+      "result": "Pass"
+    },
+    {
+      "id": "BROWSER-EVIDENCE",
+      "description": "Bảng Pass được hỗ trợ bởi log trình duyệt đủ nhánh",
+      "result": "Pass"
+    },
+    {
+      "id": "INTEGRATION",
+      "description": "Không dấu conflict Git, không ghi trạng thái chưa có prototype đã lỗi thời",
+      "result": "Pass"
+    }
+  ]
+}

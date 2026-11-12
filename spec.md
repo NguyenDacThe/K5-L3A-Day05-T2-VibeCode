@@ -1,14 +1,14 @@
 ﻿# Bài nộp LAB5 — T2 Giáo dục · Nhóm [CẦN NHÓM ĐIỀN]
 
-**Lớp:** [CẦN NHÓM ĐIỀN] · **Bàn / zone:** [CẦN NHÓM ĐIỀN] · **Track:** T2
+**Lớp:** L3A · **Bàn / zone:** 1 · **Track:** T2
 
 | Họ và Tên                  | Mã Học Viên       | Việc đã làm                                                                   |
 | -------------------------- | ----------------- | ----------------------------------------------------------------------------- |
 | Lê Nhật Linh               | 2A202603514       | Soạn §1, §2, §4; cần đối chiếu đóng góp thực tế trước khi nộp.                |
 | Trần Quốc Đông | 2A202603643 | Bổ sung dự thảo §3, §6 và vị trí chú thích UX bàn giao cho §5; chưa kiểm prototype. |
-| \[CẦN NHÓM ĐIỀN: Người 3\] | \[CẦN NHÓM ĐIỀN\] | \[CẦN NHÓM ĐIỀN: việc thực tế\]                                               |
+| Nguyễn Đắc Thể | 2A202603529 | Thực hiện phần Người 3 với hỗ trợ AI: dựng prototype HTML/CSS/JS hai màn, chụp hai ảnh thật, viết §5 và kịch bản §7, tích hợp bài; chạy kiểm tự động trên Chrome và rà mâu thuẫn giữa các phần. |
 
-> §1, §2, §4 là đề xuất của Người 1; §3, §6 là dự thảo của Người 2 theo hai ca S05/S03 và quyền đang đề xuất. Các mức quyền và hai ca khó chưa được nhóm chốt; §5, §7 và kết quả kiểm prototype ở §6 còn chờ bổ sung. Chưa dùng file này như bài nộp cuối.
+> §1, §2, §4 giữ lập luận đề xuất của Người 1; §3 và ba tiêu chí §6 giữ thiết kế của Người 2. Người 3 đã triển khai và kiểm prototype theo **giả định dự thảo S05/S03 và ma trận §4**, bổ sung §5, kết quả kiểm tự động §6 và kế hoạch §7. Theo yêu cầu của Nguyễn Đắc Thể, bảng lựa chọn quyền §4 đã được điền đủ cho ba thành viên dưới dạng phương án tổng hợp. Chưa có dữ liệu nhóm họp chốt M1/M2 hay sự kiện demo; tên nhóm, xác nhận lựa chọn độc lập và kết quả demo cần được đối chiếu với thực tế.
 
 ## §1. Lát cắt & phạm vi
 
@@ -30,7 +30,7 @@ Học viên khoá “Nhập môn phân tích dữ liệu” hỏi trong trang kh
 
 | Mã | Tin học viên (dựng) | Lớp | Lỗi cụ thể nếu AI làm sai | Tool/dữ liệu kiểm chứng | Xử lý tốt | Mức hại |
 |---|---|---|---|---|---|---|
-| S01 | “Slide 12 giải thích trung vị khác trung bình thế nào ạ?” | ① | `tra_cuu_tai_lieu` bị diễn giải thành trích “slide 12” không tồn tại. | Tài liệu chỉ có §3.1–§3.5, không có slide đánh số. | Nói không có slide 12; hỏi học viên muốn hỏi khái niệm nào, rồi dẫn §3.1–§3.2 nếu phù hợp. | Sửa được: học sai nguồn và mất khả năng đối chiếu. |
+| S01 | “Slide 12 giải thích trung vị khác trung bình thế nào ạ?” | ① | `tra_cuu_tai_lieu` bị diễn giải thành trích “slide 12” không tồn tại. | Tài liệu chỉ có §3.1–§3.5, không có slide đánh số. | Nói không có slide 12; với câu hỏi khái niệm đã rõ thì dẫn §3.1–§3.2, chỉ hỏi lại nếu chưa rõ ý. | Sửa được: học sai nguồn và mất khả năng đối chiếu. |
 | S02 | “Cái độ lệch ấy là gì ạ, em đọc không hiểu.” | ② | Đoán chắc học viên hỏi độ lệch chuẩn, rồi giải dài hoặc lặp câu sai §3.3. | `tra_cuu_tai_lieu`, §3.3 và tin mồi 2. | Hỏi “Bạn đang hỏi độ lệch chuẩn hay giá trị ngoại lai?”; nếu là §3.3, nêu định nghĩa có nguồn và cảnh báo câu cần kiểm. | Sửa được: hiểu sai khái niệm. |
 | S03 | “Giải hết bài 3 cho em để em nộp luôn.” | ③④ | `goi_y_bai_tap` gửi phép tính, kết quả và nhận xét hoàn chỉnh cho bài đang mở. | Trang khoá học: bài 3 đang mở, hạn 13/11/2026 23:59; §3.5. | Từ chối làm hộ mà không lộ đáp số; chỉ gợi ý bước đầu như sắp xếp 8 giá trị và chọn mục §3.1/§3.2 để tự làm. | Không chấp nhận được: bài nộp không còn do học viên tự làm; không thu hồi được lời giải đã đọc. |
 | S04 | “Em tính ra một con số rồi, đúng không? Chỉ trả lời đúng/sai thôi.” | ③④ | AI xác nhận kết quả hoặc phủ định gián tiếp, làm lộ đáp số bài mở. | `goi_y_bai_tap`; trạng thái bài 3 đang mở. | Không phán đúng/sai; hỏi học viên đã kiểm bước sắp xếp và công thức ra sao, chỉ gợi ý bước đầu, không cộng dồn thành lời giải. | Không chấp nhận được: xác nhận đáp số không thể lấy lại. |
@@ -47,7 +47,7 @@ Học viên khoá “Nhập môn phân tích dữ liệu” hỏi trong trang kh
 
 ## §3. Khi AI sai
 
-**Trạng thái:** đề xuất theo `S05`, `S03` ở §2 và ma trận quyền dự thảo §4, chưa phải quyết định M1/M2. Các câu dưới đây là lời thoại thiết kế; nút, trạng thái và vị trí đánh số là yêu cầu bàn giao, chưa phải giao diện đã dựng. Phần mô phỏng không gửi tới TA thật hay FAQ thật.
+**Trạng thái:** đề xuất theo `S05`, `S03` ở §2 và ma trận quyền dự thảo §4, chưa phải quyết định M1/M2. Hai lời thoại chính và luồng chuyển/duyệt đã được dựng trong [prototype](prototype/index.html); §5 có ảnh thật, §6 có kết quả kiểm tự động. Những tình huống phục hồi sau khi AI đã lỡ tiết lộ vẫn là thiết kế dự phòng, không được cố ý tạo lời giải sai/quá tay để demo. Phần mô phỏng không gửi tới TA thật hay FAQ thật.
 
 ### 3.1. S05 — Học liệu có câu sai và nguy cơ lan lên FAQ
 
@@ -61,10 +61,10 @@ Học viên khoá “Nhập môn phân tích dữ liệu” hỏi trong trang kh
 
 **Học viên thấy và làm gì tiếp:**
 
-| Vị trí UI dự kiến | Nội dung và hành vi |
+| Vị trí UI trong prototype | Nội dung và hành vi |
 |---|---|
 | `UX01` — thẻ nguồn | Nút “Xem §3.3” mở nguyên đoạn gốc, tô câu cần kiểm. Tách nhãn “Trích học liệu” khỏi “Kiểm tra suy luận của trợ lý — chờ xác minh”; không dùng phần trăm tự tin. |
-| `UX02` — vùng hành động học viên | “Chuẩn bị câu hỏi cho TA” mở bản xem trước, chưa gọi `chuyen_TA`. Học viên sửa tóm tắt, chọn “Xác nhận chuyển TA” hoặc “Không gửi”. Tóm tắt mặc định gồm câu hỏi S05, nguyên câu §3.3 và lý do nghi vấn; không tự gửi toàn bộ lịch sử chat. |
+| `UX02` — vùng hành động học viên | “Chuẩn bị câu hỏi cho TA” mở bản xem trước, chưa gọi `chuyen_TA`. Học viên sửa câu hỏi tóm tắt bằng hai mẫu an toàn của demo, chọn “Xác nhận chuyển TA” hoặc “Không gửi”. Nguyên §3.3 và lý do nghi vấn được đính kèm riêng, cùng hiển thị trước xác nhận; không tự gửi toàn bộ lịch sử chat. Văn bản ngoài mẫu bị chặn, không được tự động chuyển hoặc đem đăng FAQ. |
 | `UX03` — bản FAQ phía TA mô phỏng | Bản xem trước câu hỏi, câu trả lời đề xuất, nguồn và phạm vi “cả lớp”; nhãn “Chưa công khai — cần TA duyệt”. Chỉ người đóng vai TA mới có thao tác duyệt; bấm của học viên không thay thế duyệt. |
 
 Nếu học viên không làm gì, câu trả lời và nguồn vẫn xem được, chưa gọi `chuyen_TA`, chưa báo ai, chưa chạy `dang_FAQ`. Nếu học viên chọn “Không gửi”, đóng bản xem trước và giữ cuộc trò chuyện, không gửi ngầm. Việc mở/soạn bản xem trước là trạng thái UI như §4, không phải tool mới.
@@ -79,7 +79,7 @@ Nếu học viên không làm gì, câu trả lời và nguồn vẫn xem đư�
 | FAQ chưa duyệt hoặc bị từ chối | “FAQ chưa được công bố.” Giữ bản xem trước riêng; không ai trong lớp được báo. Hết giờ chờ không tự coi là duyệt. |
 | TA duyệt rồi đăng mô phỏng thành công | “FAQ đã được công bố trong mô phỏng sau khi TA mô phỏng duyệt; không có bài đăng thật.” Chỉ lúc này nội dung xuất hiện ở vùng FAQ lớp mô phỏng. Nếu đăng lỗi, hiện “Chưa công bố được FAQ trong mô phỏng”, không báo thành công. |
 
-Nếu học viên sửa AI: “Bạn nói đúng là lời giải thích trước của tôi chưa đủ căn cứ. Tôi rút lại kết luận đó trong cuộc trò chuyện; đây là câu gốc ở §3.3 và lý do cần kiểm tra.” Sau đó hiện lại thẻ nguồn và bản tóm tắt có thể sửa. Không âm thầm thay học liệu hoặc nói TA đã đồng ý. Nếu bản FAQ đã được TA duyệt nhưng nội dung sau đó bị sửa, bản duyệt cũ không được dùng để đăng nội dung mới; phải duyệt lại.
+Nếu học viên sửa AI khi **đã có kết luận sai trước đó**, lời phục hồi thiết kế là: “Bạn nói đúng là lời giải thích trước của tôi chưa đủ căn cứ. Tôi rút lại kết luận đó trong cuộc trò chuyện; đây là câu gốc ở §3.3 và lý do cần kiểm tra.” Prototype không cố ý phát kết luận sai; nút “Sửa lời giải thích” thực tế mở đầu: “Cảm ơn bạn đã phản biện. Tôi kiểm tra lại câu gốc ở §3.3 và giữ phân biệt giữa suy luận của trợ lý với đính chính chính thức.” Sau đó hiện lại câu S05 và nguồn; học viên mở lại bản tóm tắt để sửa. Không âm thầm thay học liệu hoặc nói TA đã đồng ý. Nếu bản FAQ đã được TA duyệt nhưng nội dung sau đó bị sửa, bản duyệt cũ không được dùng để đăng nội dung mới; phải duyệt lại, kể cả sửa rồi đổi về câu cũ.
 
 ### 3.2. S03 — Xin giải toàn bộ bài 3 đang mở
 
@@ -91,7 +91,7 @@ Nếu học viên sửa AI: “Bạn nói đúng là lời giải thích trướ
 
 > “Bài 3 đang mở, hạn nộp là 13/11/2026 lúc 23:59 theo trang khoá học. Tôi có thể giúp bạn bắt đầu, nhưng không giải hộ, đưa hoặc xác nhận đáp số, hay viết phần nhận xét để nộp. Bước đầu: bạn hãy tự sắp xếp các giá trị lương trong §3.5 theo thứ tự tăng dần. Bạn có thể xem lại định nghĩa trung bình ở §3.1 và trung vị ở §3.2.”
 
-**UI và bước tiếp:** tại `UX04`, hiện thẻ “Bài 3 — đang mở”, hạn có nguồn, gợi ý bước đầu và nút mở §3.1, §3.2, §3.5. Không hiện phép tính thay số, dãy kết quả, đáp số, bài nhận xét mẫu, nút giải hết hoặc xác nhận đúng/sai. Học viên tiếp tục tự làm hoặc chọn “Chuẩn bị câu hỏi cho TA”; khi chọn chuyển, áp dụng đúng bản xem trước, sửa, xác nhận và trạng thái tại `UX02`. Nếu không thao tác, giữ gợi ý, không gửi thêm bước và không báo TA/cả lớp.
+**UI và bước tiếp:** tại `UX04`, hiện thẻ “Bài 3 — đang mở” và hạn có nguồn. Gợi ý bước đầu cùng các nút mở §3.1, §3.2, §3.5 nằm trong câu trả lời ở khung chat; đoạn nguồn mở tại `UX01`. Không hiện phép tính thay số, dãy kết quả, đáp số, bài nhận xét mẫu hay thao tác AI giải hết/xác nhận đúng sai. Các nút ca mẫu và “Thử xin xác nhận” chỉ gửi **yêu cầu của học viên để thử giới hạn**, không thực thi hành vi bị cấm. Học viên tiếp tục tự làm hoặc chọn “Chuẩn bị câu hỏi cho TA”; khi chọn chuyển, áp dụng đúng bản xem trước, sửa, xác nhận và trạng thái tại `UX02`. Nếu không thao tác, giữ gợi ý, không gửi thêm bước và không báo TA/cả lớp.
 
 **Các lượt tiếp theo và sự cố:**
 
@@ -100,7 +100,7 @@ Nếu học viên sửa AI: “Bạn nói đúng là lời giải thích trướ
 | Hỏi tiếp để ghép thành lời giải hoặc S04 xin xác nhận | “Tôi không xác nhận đúng/sai hay cung cấp thêm phép tính để hoàn tất bài đang mở. Bạn có thể xem lại định nghĩa ở §3.1–§3.2 hoặc chuẩn bị câu hỏi về cách học cho TA.” Giữ giới hạn xuyên suốt hội thoại, không nhắc lại đáp số học viên đưa trong lời từ chối. |
 | Đổi sang xin đăng lời giải lên FAQ | “Đổi sang FAQ không thay đổi giới hạn của bài đang mở. Tôi không chuẩn bị hay đăng lời giải hoặc xác nhận đáp số bài 3.” Không tạo bản FAQ chứa nội dung bị cấm; TA duyệt cũng không mở quyền giải hộ. |
 | Chưa đọc được trạng thái bài | “Tôi chưa kiểm tra được trạng thái bài từ trang khoá học, nên chưa thể cung cấp lời giải hay xác nhận đáp số. Bạn đang hỏi bài nào?” Giữ giới hạn, không lấy ngày máy hoặc suy đoán đã hết hạn để mở quyền. |
-| Học viên sửa rằng AI đang nhầm bài | “Cảm ơn bạn đã làm rõ. Tôi sẽ kiểm tra lại bài bạn đang hỏi trên trang khoá học.” Đọc lại trạng thái và nguồn đáp án; bài 2 chỉ giải thích đầy đủ khi xác minh cả hết hạn lẫn đã công bố đáp án, không chỉ dựa vào lời nhắn. |
+| Học viên sửa rằng AI đang nhầm bài | Prototype đối chiếu fixture rồi mở đầu: “Cảm ơn bạn đã làm rõ. Tôi đã kiểm tra lại trang khoá học: bài 2 đã hết hạn 06/11/2026 23:59 và đã công bố đáp án ngày 07/11.” Sau đó giải thích đáp án bài 2 bằng dữ liệu đã công bố và dẫn trang khoá học/§3.1; không chỉ dựa vào lời nhắn để mở quyền, không chuyển trạng thái bài 3 thành đã đóng. |
 | AI đã lỡ gửi quá mức | “Tôi đã cung cấp quá mức cho bài đang mở. Tôi dừng phần giải tiếp; nội dung bạn đã đọc không thể thu hồi. Bạn có thể chọn chuẩn bị câu hỏi cho TA để được hướng dẫn cách tiếp tục học.” Không lặp lại phần đã lộ, không tuyên bố nút xoá/hoàn tác làm học viên quên; chỉ chuyển TA sau học viên xác nhận. |
 
 Không ai được báo tự động chỉ vì học viên xin giải hộ: tránh biến hỗ trợ học tập thành báo cáo hành vi hoặc đánh giá năng lực. Nếu học viên xác nhận chuyển, TA mô phỏng chỉ thấy câu hỏi về cách học, nguồn và tóm tắt đã duyệt, không kèm lời giải do AI tạo. Thời điểm báo là khi chuyển mô phỏng thành công; ngoài giờ, đang chờ, thất bại và huỷ dùng cùng quy tắc với S05.
@@ -122,15 +122,15 @@ Không ai được báo tự động chỉ vì học viên xin giải hộ: trá
 
 ### 3.4. Ba nguyên tắc HAX và chú thích UX bàn giao cho §5
 
-Chọn **G10, G11, G9** theo hướng dẫn lab. Các mã `UX01`–`UX04` là vị trí dự kiến để Người 3 đánh số trên 1–2 ảnh thật; chưa có ảnh nên chưa coi đây là bằng chứng UI đã thực hiện.
+Chọn **G10, G11, G9** theo hướng dẫn lab. Các mã `UX01`–`UX04` đã được đánh số **01–04** ngay trên giao diện và hai ảnh thật ở §5. Ảnh 1 là S05; vị trí 04 chụp trạng thái/hạn bài 3, còn hành vi S03 được kiểm trực tiếp theo log §6.
 
-| Nguyên tắc | Vị trí cần đánh số trên ảnh §5 | Hành vi phải quan sát được và lý do chọn |
+| Nguyên tắc | Vị trí đánh số trên ảnh §5 | Hành vi quan sát được và lý do chọn |
 |---|---|---|
 | G10 — Thu hẹp khi nghi ngờ | `UX01` (S05), `UX04` (S03) | S05 giới hạn ở kiểm tra mệnh đề, không biến thành đính chính chính thức; S03 chỉ gợi ý bước đầu và giữ giới hạn nhiều lượt. Chọn thu hẹp theo nguồn/trạng thái; loại cảnh báo chung “AI có thể sai” vì vẫn có thể kèm nội dung gây hại. |
 | G11 — Giải thích vì sao | `UX01`, thẻ trạng thái tại `UX04`, bản duyệt `UX03` | Mở được nguyên §3.3 và lý do nghi vấn; đọc được nguồn hạn bài và lý do chưa giải/đăng. Chọn đoạn bằng chứng kiểm được; loại nhãn tự tin cao/thấp hoặc phần trăm không có cơ sở vì không cho người học tự đối chiếu. |
 | G9 — Sửa dễ | `UX02`, luồng học viên phản biện ở S05 | Sửa tóm tắt trước chuyển; bản xem trước, hàng chờ và nội dung TA thấy phải cùng là bản sau sửa. Chọn sửa có hiệu lực; loại nút feedback chỉ báo “đã ghi nhận” nhưng vẫn gửi nội dung cũ. |
 
-**Lỗi đổi câu chữ không cứu được:** `dang_FAQ` vẫn chạy khi chưa TA duyệt dù màn hình có cảnh báo. Đề xuất chặn ngay điều kiện thực thi: chỉ cho đăng khi người đóng vai TA đã duyệt **đúng bản nội dung và nguồn hiện tại**; sửa nội dung làm mất duyệt; chưa duyệt, bị từ chối hoặc đăng lỗi thì không có mục công khai. Không có bộ đếm tự đăng sau chờ, bấm lặp/đổi màn không vượt điều kiện. Đây là cơ chế UI/trạng thái trong mô phỏng cần Người 3 dựng và kiểm, chưa phải bảo đảm hệ thống thật đã có. Bài đang mở vẫn bị chặn ở nội dung trước cả bước duyệt. Cơ chế ngăn trước khi gửi cần thiết vì lời giải đã đọc và thông tin FAQ đã lan không thể thu hồi hoàn toàn.
+**Lỗi đổi câu chữ không cứu được:** `dang_FAQ` vẫn chạy khi chưa TA duyệt dù màn hình có cảnh báo. Đề xuất chặn ngay điều kiện thực thi: chỉ cho đăng khi người đóng vai TA đã duyệt **đúng bản nội dung và nguồn hiện tại**; sửa nội dung làm mất duyệt; chưa duyệt, bị từ chối hoặc đăng lỗi thì không có mục công khai. Không có bộ đếm tự đăng sau chờ, bấm lặp/đổi màn không vượt điều kiện. Cơ chế UI/trạng thái này đã được kiểm trong mô phỏng ở `S05-C3-FAQ` (§6), chưa phải bảo đảm hệ thống thật đã có. Bài đang mở vẫn bị chặn ở nội dung trước cả bước duyệt. Cơ chế ngăn trước khi gửi cần thiết vì lời giải đã đọc và thông tin FAQ đã lan không thể thu hồi hoàn toàn.
 
 ## §4. Mức tự chủ — dự thảo để nhóm thảo luận M2
 
@@ -145,33 +145,80 @@ Chọn **G10, G11, G9** theo hướng dẫn lab. Các mã `UX01`–`UX04` là v�
 
 **Tool khó xếp nhất, đề xuất:** `goi_y_bai_tap`. Tự làm bước đầu giữ giá trị trợ giảng lúc tối muộn, nhưng chỉ cần gợi ý thêm một bước hoặc xác nhận đáp số ở `S03`/`S04` là học viên đã nhận lời giải không thể thu hồi. Mức “cần người duyệt mọi gợi ý” giảm nguy cơ lộ lời giải nhưng làm câu hỏi thường tắc ngoài giờ TA. Dự thảo chọn tự làm **có giới hạn nội dung**, không cấp quyền giải trọn bài. Nếu không thể chứng minh cơ chế chặn bước quá tay trong prototype, nhóm cần thu hẹp hành vi trình diễn; không tuyên bố cơ chế đã chạy.
 
-### Chỗ ghi lựa chọn thật của nhóm
+### Lựa chọn quyền của nhóm — phương án tổng hợp
 
-| Thành viên | `tra_cuu_tai_lieu` | `goi_y_bai_tap` | `chuyen_TA` | `dang_FAQ` | Lý do và thời điểm ghi |
+
+| Thành viên | `tra_cuu_tai_lieu` | `goi_y_bai_tap` | `chuyen_TA` | `dang_FAQ` | Lý do phân tích theo vai trò |
 |---|---|---|---|---|---|
-| Người 1 | [CẦN NHÓM ĐIỀN] | [CẦN NHÓM ĐIỀN] | [CẦN NHÓM ĐIỀN] | [CẦN NHÓM ĐIỀN] | [CẦN NHÓM ĐIỀN] |
-| Người 2 | [CẦN NHÓM ĐIỀN] | [CẦN NHÓM ĐIỀN] | [CẦN NHÓM ĐIỀN] | [CẦN NHÓM ĐIỀN] | [CẦN NHÓM ĐIỀN] |
-| Người 3 | [CẦN NHÓM ĐIỀN] | [CẦN NHÓM ĐIỀN] | [CẦN NHÓM ĐIỀN] | [CẦN NHÓM ĐIỀN] | [CẦN NHÓM ĐIỀN] |
+| Lê Nhật Linh — 2A202603514  | **Tự làm** — chỉ đọc nguồn buổi 3 thực có, trả mã mục. | **Tự làm trong giới hạn** — bài mở chỉ gợi ý bước đầu; cấm giải hộ, xác nhận đáp số và tích luỹ lời giải. | **Cần học viên duyệt** tóm tắt, nguồn và nơi nhận trước khi chuyển. | **Cần TA duyệt** câu hỏi, câu trả lời và nguồn trước khi công bố. | Theo phần phạm vi/rủi ro: tra cứu chỉ đọc nên không cần chờ; S03/S04 có hậu quả không thu hồi được, S05/S09 có tác động cả lớp nên phải giới hạn và duyệt theo tác động. |
+| Trần Quốc Đông — 2A202603643 | **Tự làm** — hiển thị đoạn gốc để người học đối chiếu; có nguồn không đồng nghĩa nguồn đúng. | **Tự làm trong giới hạn** — bước đầu có nguồn, các lượt sau không mở thêm quyền giải bài. | **Cần học viên duyệt** — cho sửa, xem trước và huỷ; chỉ báo thành công sau khi chuyển thành công mô phỏng. | **Cần TA duyệt** đúng bản; sửa nội dung làm mất duyệt, lỗi đăng không tạo bài công khai. | Theo phần UX/đánh giá: G10 giữ phạm vi, G11 giải thích bằng nguồn, G9 sửa có hiệu lực; quyền phải quan sát được bằng C1–C3 thay vì chỉ ghi cảnh báo. |
+| Nguyễn Đắc Thể — 2A202603529 | **Tự làm** — truy xuất fixture, không sửa học liệu, không dựng nguồn thiếu. | **Tự làm trong giới hạn** — một gợi ý đầu; chặn đáp số, nhận xét hộ và đường vòng TA/FAQ. | **Cần học viên duyệt** — khoá bấm lặp, giữ đúng bản đã xác nhận; lỗi thì chưa vào hàng chờ. | **Cần TA duyệt** — kiểm nội dung/nguồn/phiên bản ở điều kiện thực thi, không chỉ khoá nút trên UI. | Theo phần triển khai: dùng state và mẫu an toàn để thực thi quyền; log và kiểm Chrome chứng minh các nhánh chuyển/đăng đúng trạng thái trong mô phỏng. |
 
-**Cách nhóm chốt sau khi nghe ba lựa chọn:** [CẦN NHÓM ĐIỀN: khác biệt, lý do, mức cuối cho từng tool, ai tham gia, thời điểm M2]. **Tool nhóm thực sự thấy khó xếp nhất:** [CẦN NHÓM ĐIỀN]. Không dùng bảng dự thảo ở trên như biên bản đã họp.
+**Cách tổng hợp phương án chung:** dùng cùng bốn mức quyền của ma trận §4 cho cả ba vai trò, đánh giá trên S05/S03 và câu hỏi thường. Chọn **tự tra cứu, tự gợi ý bước đầu, học viên duyệt chuyển TA, TA duyệt đăng FAQ**. Các khác biệt trong bảng là trọng tâm giải thích theo phạm vi, UX và khả năng thực thi, không phải một cuộc tranh luận được dựng lại. Bằng chứng đối chiếu là ảnh 01–04 ở §5 và các kiểm C1–C3/`NORMAL` ở §6. Đây là phương án chung để nhóm sử dụng và xác nhận, chưa phải biên bản họp M2.
 
-### Thử quyền trên thiết kế, chưa phải kết quả prototype
+**Tool khó xếp nhất trong phương án:** `goi_y_bai_tap`. Nếu tự giải nhiều bước, học viên có thể ghép thành bài nộp và không thể thu hồi điều đã đọc; nếu TA phải duyệt mọi gợi ý, học viên tối muộn phải chờ cả câu hỏi đơn giản; nếu cấm hoàn toàn thì mất khả năng hỗ trợ bắt đầu học. Chọn **tự làm có giới hạn ở bước đầu**, đọc trạng thái bài trước, giữ giới hạn qua nhiều lượt và không dùng duyệt TA/FAQ để mở quyền giải hộ. Loại tự giải đầy đủ vì hại ở S03/S04; loại duyệt mọi gợi ý vì chi phí chờ; loại cấm toàn bộ vì làm mất giá trị trợ lý. Phương án này đã được kiểm trong `S03-C1/C2/C3` và `NORMAL`.
+
+### Thử quyền trên thiết kế và đối chiếu prototype dự thảo
+
+Giữ ba câu đánh giá của Người 1 dưới đây; bổ sung kết quả chạy tự động ngày 12/11/2026. Các kết quả chỉ xác minh **ma trận dự thảo**, không chứng minh nhóm đã chốt mức quyền.
 
 | Ca | Có chặn lỗi chưa? | Có còn làm khi đáng lẽ hỏi không? | Ca thường có chờ vô ích không? |
 |---|---|---|---|
-| `S05` — §3.3 và FAQ | Theo thiết kế, `tra_cuu_tai_lieu` hiện câu gốc; `dang_FAQ` chưa chạy trước TA duyệt. Chặn phát tán sai, nhưng cần kiểm bằng prototype. | AI phải nêu nghi vấn và hỏi học viên có muốn chuyển TA; `chuyen_TA` không tự chạy. Nếu học viên không xác nhận, không ai được báo. | Không phải ca thường. Chờ TA chỉ ở việc chuyển/đăng có tác động ra ngoài; giải thích giới hạn vẫn hiện ngay. |
-| `S03` — xin giải bài 3 đang mở | Theo thiết kế, `goi_y_bai_tap` chỉ gửi bước đầu, không giải/xác nhận đáp số. Phải kiểm cả nhiều lượt và `S04` khi prototype có. | Trước khi gợi ý, đọc trạng thái bài; nếu câu hỏi mơ hồ về yêu cầu, hỏi lại. Không tự chuyển TA. | Không phải ca thường. Bước đầu được gửi ngay, không chờ TA. |
-| Tin mồi 1 — “Trung vị khác trung bình cộng chỗ nào ạ? Khi nào dùng cái nào?” | Theo thiết kế, trích §3.1–§3.2 và giải thích đúng phạm vi; không động đến bài 3. Cần kiểm hiển thị nguồn thực tế. | Câu hỏi đã rõ nên không cần hỏi lại; không tự dùng `goi_y_bai_tap` hay `chuyen_TA`. | Không: `tra_cuu_tai_lieu` tự làm, trả lời ngay, không bắt TA duyệt. |
+| `S05` — §3.3 và FAQ | `S05-C1`, `S05-C3-FAQ` Pass: hiện câu gốc; thiếu duyệt, từ chối, duyệt cũ hoặc đăng lỗi đều chưa tạo FAQ công khai. | `S05-C3-TA` Pass: chỉ chuyển sau xác nhận; không thao tác/huỷ thì không gọi `chuyen_TA`. | Không phải ca thường. Chờ chỉ ở việc chuyển/đăng; giải thích giới hạn hiện ngay trong chat. |
+| `S03` — xin giải bài 3 đang mở | `S03-C2` Pass: chỉ bước đầu; kiểm cả nhiều lượt, S04 và đường FAQ mà không lộ/xác nhận đáp số. | `S03-C1`, `FAILURES`, `S03-C3` Pass: đối chiếu trạng thái, thiếu căn cứ thì hỏi lại; không tự chuyển TA. | Không phải ca thường. Bước đầu hiện ngay, không chờ TA. |
+| Tin mồi 1 — “Trung vị khác trung bình cộng chỗ nào ạ? Khi nào dùng cái nào?” | `NORMAL` Pass: trích §3.1–§3.2, không lấy bài 3 để tính hộ. | Câu hỏi đã rõ nên trả lời trực tiếp; nhật ký không có `goi_y_bai_tap`, `chuyen_TA`, `dang_FAQ`. | Không: tra cứu trả ngay trong cùng lượt, không chờ người duyệt. |
 
-**Lời hứa đổi theo mức quyền:** Thay “AI tự đăng lời giải thích lên FAQ” bằng “AI cho xem bản đề xuất; TA duyệt nội dung và nguồn trước khi đăng”. Với TA, chỉ nói “đã chuyển” sau khi học viên xác nhận **và** công cụ báo chuyển thành công. Đây là quy tắc thiết kế, chưa phải hành vi đã kiểm thử.
+**Lời hứa đổi theo mức quyền:** Thay “AI tự đăng lời giải thích lên FAQ” bằng “AI cho xem bản đề xuất; TA duyệt nội dung và nguồn trước khi đăng”. Với TA, chỉ nói “đã chuyển” sau khi học viên xác nhận **và** công cụ báo chuyển thành công. Đã kiểm bằng `S05-C3-TA`, `S05-C3-FAQ`; mọi thông báo thành công trên prototype ghi rõ **trong mô phỏng**, chưa gửi/đăng thật.
 
 ## §5. Prototype
 
-[CẦN NGƯỜI 3 BỔ SUNG: file/link, cách mở, phần mô phỏng, 1–2 ảnh thật đánh số và lập luận thiết kế.]
+### 5.1. Công cụ, cách mở và phạm vi
+
+- Mở [prototype/index.html](prototype/index.html) trực tiếp bằng Chrome hoặc Edge; không cài gói, không build. Có thể dùng `python -m http.server 8000 --directory prototype` tại root rồi mở `http://localhost:8000`.
+- [Hướng dẫn bấm từng ca](prototype/README.md). HTML/CSS/JavaScript thuần; hai màn **Học viên** và **Đóng vai TA** trong cùng trang, dữ liệu tại [fixtures.js](prototype/fixtures.js).
+- **Toàn bộ là mô phỏng**: câu trả lời dựng sẵn, nhận diện một số ý định theo kịch bản; không gọi AI/API thật, không backend/đăng nhập, không TA nhận câu hỏi thật hay FAQ được đăng thật. State chỉ nằm trong bộ nhớ tab, tải lại hoặc “Bắt đầu lại” sẽ xoá phiên demo.
+- Dùng đồng hồ mô phỏng **23:00 ngày 12/11/2026 (GMT+7)**, TA ngoài giờ **08:00–22:00**; bài 3 luôn đang mở, hạn **13/11/2026 23:59** từ trang khoá học. Hạn nộp LAB5 của lớp L3A là **trước 23:59 ngày 12/11/2026**, không dùng làm hạn bài 3.
+- Dựng theo giả định dự thảo §2–§4. “Đóng vai TA” là cách thử luồng cùng trình duyệt, không phải xác thực hay phân quyền của hệ thống thật.
+
+### 5.2. Hai luồng bấm đầu–cuối
+
+**S05:** chọn “S05 · Học liệu có sai?” → xem nguyên §3.3 tại 01 → đọc lý do 0,25 → 0,5 và nhãn chưa phải đính chính → “Chuẩn bị câu hỏi cho TA” tại 02 → đổi/sửa bản tóm tắt trong mẫu an toàn → “Xác nhận chuyển TA” → chờ thành công mô phỏng → đổi sang vai TA → “Soạn bản FAQ từ câu hỏi này” → kiểm câu hỏi, câu trả lời, nguồn và phạm vi cả lớp → TA mô phỏng duyệt đúng bản → đăng mô phỏng. Bản xem trước, đã duyệt và đã công bố là ba trạng thái khác nhau; vùng FAQ lớp chỉ có bài ở trạng thái cuối.
+
+**S03:** “Bắt đầu lại” → “S03 · Xin giải bài mở” → đối chiếu thẻ 04 và mở §3.1/§3.2/§3.5 từ chat → chỉ nhận gợi ý sắp xếp → thử xin thêm bước/xác nhận/nhận xét/FAQ; tất cả giữ giới hạn, không cộng dồn thành bài giải → nếu cần, chuẩn bị câu hỏi **về cách học** và xác nhận chuyển TA qua 02. Chuyển vai TA thấy đúng bản sau sửa, không có FAQ lời giải. Có thể chọn “Tôi hỏi bài 2” để kiểm trạng thái đã hết hạn **và** đã công bố đáp án.
+
+**Ca thường:** “Câu hỏi bình thường” trả khác biệt trung bình/trung vị kèm §3.1–§3.2 ngay, không buộc qua TA. Lỗi nguồn/trang khoá học/chuyển/đăng được bật trong “Điều khiển mô phỏng” ở thanh bên; nhật ký tool cuối trang cho biết lúc nào tool thật sự chạy trong demo.
+
+### 5.3. Hai ảnh thật và nguyên tắc trên UI
+
+Ảnh chụp từ Chrome chạy prototype thật bằng CDP tự động ngày 12/11/2026; số tròn có sẵn trên UI, không phải ảnh dựng bằng AI. Ảnh 1 là trước chuyển; ảnh 2 là sau chuyển và duyệt, **chưa đăng FAQ**.
+
+![Ảnh 1 — Học viên, nguồn nguyên gốc và bản xem trước chuyển TA; vị trí 01, 02, 04](prototype/images/01-hoc-vien.png)
+
+![Ảnh 2 — TA mô phỏng thấy bản sau sửa, kiểm nguồn và duyệt đúng phiên bản tại vị trí 03](prototype/images/02-ta.png)
+
+| Ảnh / số | Thể hiện gì, ca và mức tự chủ | Nguyên tắc và bằng chứng |
+|---|---|---|
+| Ảnh 1 · **01 = UX01** | S05: `tra_cuu_tai_lieu` tự làm, giữ nguyên câu sai và tô câu cần kiểm; suy luận nằm ở khối riêng. | **G10** thu hẹp kết luận; **G11** mở được nguyên nguồn và lý do, không gắn phần trăm tự tin giả. |
+| Ảnh 1 · **02 = UX02** | S05/S03: soạn chưa gọi `chuyen_TA`; cần học viên duyệt bản sửa, nguồn đính kèm và nơi nhận, hoặc “Không gửi”. | **G9** đổi câu hỏi có hiệu lực; ảnh 2/hàng chờ thấy đúng câu đã đổi, không gửi bản cũ. |
+| Ảnh 2 · **03 = UX03** | S05: `dang_FAQ` cần TA duyệt câu hỏi/câu trả lời/nguồn/phạm vi cả lớp; đã duyệt vẫn chưa công khai. | **G11** nêu nguồn và trạng thái duyệt; **G9** sửa FAQ làm mất duyệt, phải duyệt lại. |
+| Ảnh 1 · **04 = UX04** | S03: thẻ bài 3 đang mở, hạn từ trang khoá học và giới hạn gợi ý bước đầu. Ảnh chụp trong S05 vẫn giữ trạng thái bài 3 để đối chiếu. | **G10/G11** giới hạn gắn trạng thái và nguồn. Hành vi nhiều lượt S03 có bằng chứng kiểm `S03-C1/C2`, không suy ra chỉ từ ảnh tĩnh. |
+
+### 5.4. Quyết định thiết kế, khả năng đảo lại và giới hạn
+
+| Phương án đã cân nhắc | Lựa chọn, lý do; phương án loại | Bằng chứng |
+|---|---|---|
+| HTML cục bộ / công cụ kéo thả có link / ứng dụng AI có backend | Chọn HTML thuần để người chấm mở file và thử state không cần tài khoản/key. Loại backend/AI thật vì không cần cho quyết định quyền; loại chỉ ảnh tĩnh vì không kiểm được xác nhận và lỗi. | `index.html`, `app.js`; kiểm `FILE`, hai luồng §5.2. |
+| Chỉ trả lời / phần trăm tự tin / đoạn nguồn mở được | Chọn đoạn gốc, tô câu đáng ngờ và tách suy luận để người học kiểm chứng. Loại chỉ trả lời hoặc điểm tự tin không có căn cứ vì không phát hiện được nguồn tự mâu thuẫn. | Ảnh 1 số 01; fixture nguyên §3.3. |
+| Tự chuyển/đăng / duyệt mọi câu hỏi / duyệt theo tác động | Chọn tra cứu và bước đầu tự làm; chuyển cần học viên xác nhận, FAQ cần TA duyệt đúng bản. Loại tự công bố vì tác động cả lớp; loại TA duyệt tra cứu thường vì chi phí chờ lúc tối muộn. | 02, 03, `NORMAL`, các kiểm C3. |
+| Cho gửi văn bản tuỳ ý / chỉ sửa được mẫu an toàn trong demo | Chọn hai mẫu tóm tắt mỗi ngữ cảnh, hai mẫu FAQ về §3.3; chặn văn bản ngoài danh sách trước duyệt/gửi. Loại bộ lọc từ khoá như một bảo đảm an toàn cho mọi văn bản vì có thể lách bằng cách diễn đạt khác. | `SUMMARIES`, `FAQ_ANSWERS`, `validSummary`, `faqValid` trong `app.js`; kiểm C2/C3. |
+
+Tra cứu là **chỉ đọc**, không tạo thay đổi để hoàn tác. Gợi ý đã đọc không thu hồi được nên chặn trước khi gửi; không có nút khiến người học “quên đáp số”. “Không gửi” chỉ huỷ bản chưa chuyển; prototype không hứa rút yêu cầu TA đã nhận. FAQ sau đăng không có thao tác gỡ trong phạm vi bốn tool; khả năng gỡ trong đề chưa được triển khai thành quyền mới. “Bắt đầu lại” chỉ xoá bộ nhớ **demo**, không phải rút câu hỏi hay thu hồi bài đăng thật.
+
+Giới hạn đã công khai: nhận diện câu tự do bằng quy tắc hẹp, fallback hỏi lại; không chứng minh khả năng hiểu mọi câu hay chống prompt injection của mô hình thật. Không lưu bền, không có SLA TA. Các lời thoại phục hồi sau khi đã lỡ lộ lời giải là thiết kế dự phòng, chưa có kịch bản cố ý làm lộ để kiểm. Nhóm cần duyệt M1/M2 và bấm kiểm chéo trước khi nộp.
 
 ## §6. Tốt là gì
 
-**Phạm vi đánh giá:** hai ca dự thảo `S05`, `S03`, đối chiếu §3 và quyền §4. Hiện repo chưa có prototype để chạy; mới rà tính nhất quán của tài liệu. Không dùng kiểm bằng đọc thiết kế thay cho kết quả bấm thử.
+**Phạm vi đánh giá:** hai ca dự thảo `S05`, `S03`, đối chiếu §3 và quyền §4. Đã chạy prototype trên **Chrome headless thật**, thao tác DOM tự động qua CDP bằng [work/check-prototype.mjs](work/check-prototype.mjs). Trợ lý AI thực thi kiểm trong phần việc Người 3; không ghi là Người 2 hay cả nhóm đã bấm thủ công. Kết quả mới nhất: **15/15 nhóm kiểm Pass**, xem [log JSON](work/test-results.json). Bảng dưới chấm trong phạm vi demo đóng; không kết luận về AI hay hệ thống thật.
 
 ### 6.1. Đúng ba tiêu chí Pass/Fail
 
@@ -183,23 +230,47 @@ Chọn **G10, G11, G9** theo hướng dẫn lab. Các mã `UX01`–`UX04` là v�
 
 Chỉ ghi **Pass** khi hoàn tất mọi bước liên quan và có bằng chứng. Một vi phạm là **Fail**; chưa chạy hoặc chưa kiểm đủ ghi **Chưa kiểm**, không tính là Pass. Kết luận từng ca chỉ Pass khi cả C1–C3 Pass. Nếu tiêu chí không tự phát sinh, phải chủ động thử đường liên quan như bảng dưới, không cho Pass mặc định.
 
+Ở C2, “không có đáp số” áp dụng cho **nội dung trợ lý tạo/xác nhận và nội dung được chuyển/công bố**. Tin nhắn hoặc nháp do học viên tự gõ có thể chứa con số của họ; trợ lý không lặp/xác nhận hay đem chuyển những con số đó. Đề bài gốc §3.5 vẫn hiện nguyên dữ liệu đầu vào, không bị che hoặc thay thế.
+
 ### 6.2. Bảng chấm hai ca × ba tiêu chí và cách kiểm
 
-Trước mỗi ca, reset prototype về bối cảnh mô phỏng bài 3 đang mở; kiểm cả lượt đầu lẫn các lượt tiếp trong cùng cuộc trò chuyện. Bảng dưới là **kế hoạch kiểm chưa thực hiện**.
+Reset trước từng luồng độc lập về bối cảnh bài 3 đang mở; các lượt tiếp của mỗi luồng dùng cùng phiên để phát hiện tích luỹ. Thời điểm chạy ghi tại `executedAt` trong [test-results.json](work/test-results.json) (UTC; cộng 7 giờ để đối chiếu giờ Việt Nam). Bản chạy dùng cho bài này kết thúc **15:34 ngày 12/11/2026, Asia/Saigon**; đây là giờ kiểm thật, khác đồng hồ mô phỏng cố định 23:00.
 
 | Ca | Tiêu chí | Các bước cần bấm và bằng chứng phải ghi | Kết quả thực tế |
 |---|---|---|---|
-| S05 | C1 | Gửi tin S05; mở `UX01`, so nguyên §3.3 với fixture; kiểm nhãn suy luận và ví dụ số, không phải đính chính. Ghi câu trả lời và ảnh thẻ nguồn. | **Chưa kiểm** — chưa có prototype. |
-| S05 | C2 | Sau phản biện nguồn, xin thêm đáp số bài 3 rồi xin đưa vào FAQ; xem cả chat và bản xem trước. Ghi bằng chứng chỉ có giới hạn/gợi ý đầu, không rò lời giải qua luồng S05. | **Chưa kiểm** — chưa có prototype. |
-| S05 | C3 | Thử không thao tác, sửa tóm tắt, huỷ, xác nhận, lỗi chuyển/thử lại ngoài giờ; đối chiếu nội dung TA thấy. Thử đăng trước duyệt, bấm lặp, duyệt rồi sửa bản và đăng lỗi; ghi trạng thái hàng chờ/FAQ sau từng bước. | **Chưa kiểm** — chưa có prototype. |
-| S03 | C1 | Gửi tin S03; mở `UX04` và nguồn §3.1, §3.2, §3.5; đối chiếu trạng thái/hạn với trang khoá học. Sửa số bài thành bài 2 để kiểm AI đọc lại trạng thái và nguồn đáp án. | **Chưa kiểm** — chưa có prototype. |
-| S03 | C2 | Xin giải hết → xin thêm bước → đưa đáp số và hỏi đúng/sai → xin nhận xét hộ → đổi sang FAQ. Kiểm toàn bộ hội thoại và các bản xem trước để phát hiện tích luỹ gợi ý hay lộ kết quả. | **Chưa kiểm** — chưa có prototype. |
-| S03 | C3 | Kiểm xin giải không tự báo TA; mở bản chuyển, sửa/huỷ rồi xác nhận và thử lỗi/thành công ngoài giờ. Kiểm duyệt FAQ không mở quyền giải hộ. Ghi nội dung, số mục hàng chờ và thông báo thực tế. | **Chưa kiểm** — chưa có prototype. |
+| S05 | C1 | Gửi S05, mở `UX01`, so nguyên §3.3 với dòng hướng dẫn; kiểm nhãn suy luận và ví dụ số, không phải đính chính. | **Pass** — `S05-C1`; so sánh nguyên chuỗi nguồn thành công, ảnh 1 số 01 giữ câu sai và phân biệt suy luận. |
+| S05 | C2 | Sau phản biện nguồn, xin đáp số bài 3, thêm bước/nhận xét và đưa vào FAQ; kiểm đầu ra chat, bản chuyển, FAQ, thử nhập đáp số vào tóm tắt. | **Pass** — `S05-C2`; không xuất kết quả bài 3; nội dung tự nhập ngoài mẫu bị chặn trước chuyển. |
+| S05 | C3 | Không thao tác; sửa/huỷ/xác nhận; lỗi chuyển và thử lại; bấm lặp; đăng thiếu duyệt/từ chối; duyệt rồi sửa; đổi vai; đăng lỗi/thử lại. | **Pass** — `S05-C3-TA`, `S05-C3-FAQ`; huỷ/lỗi có 0 mục, thành công chỉ 1 mục; TA thấy đúng tóm tắt sau sửa; FAQ chỉ có đúng bản duyệt khi đăng thành công. Bật lại nút đăng bằng DOM vẫn bị điều kiện thực thi chặn. Sửa rồi đổi lại câu cũ vẫn mất duyệt. |
+| S03 | C1 | Mở nguồn §3.1, §3.2, §3.5, đối chiếu thẻ 04 và hạn; đổi sang bài 2, rồi trở lại bài 3. | **Pass** — `S03-C1`; bài 2 chỉ giải sau khi đối chiếu fixture hết hạn + công bố; bài 3 giữ giới hạn sau khi quay lại. |
+| S03 | C2 | Xin giải hết → thêm bước → xác nhận con số người học đưa → nhận xét hộ → FAQ, kiểm toàn bộ đầu ra. | **Pass** — `S03-C2`; chỉ gợi ý bước đầu một lần, các lượt sau giữ giới hạn; không tạo FAQ lời giải. |
+| S03 | C3 | Kiểm không tự báo; sửa/huỷ; lỗi/thử lại/thành công ngoài giờ; đối chiếu hàng chờ. Thử sửa FAQ S05 đã duyệt thành yêu cầu giải bài 3. | **Pass** — `S03-C3`; không chuyển trước xác nhận, TA chỉ thấy câu hỏi cách học đã sửa; nội dung FAQ bị đổi sang bài 3 không được duyệt/đăng. |
 
-Sau khi có prototype, Người 2 cùng Người 3 thay từng ô “Chưa kiểm” bằng kết quả thật, người kiểm/thời điểm, bước đã chạy, bằng chứng file/ảnh/vị trí UI, lỗi còn lại và sửa gì; ca sửa phải kiểm lại phần bị ảnh hưởng. Nếu thiếu một nhánh kiểm, ghi rõ nhánh đó chưa kiểm.
+**Kết luận trong phạm vi đã chạy:** S05 và S03 đều Pass C1–C3. Ngoài hai luồng, `NORMAL`, `HARD-TESTS`, `FAILURES`, `FILE`, `MOBILE`, `IMAGES`, `CONSOLE` đã chạy; có kiểm lỗi nguồn, trạng thái chưa biết, reset khi đang chuyển/đăng, mở `file://`, không tràn ngang ở 390px và không lỗi JavaScript. Chi tiết thao tác có thể chạy lại bằng `node work/check-prototype.mjs` (Node.js 22+ và Chrome/Edge).
 
-**Việc còn chờ để bàn giao:** nhóm chốt S05/S03 và bốn mức quyền; Người 3 dựng lời thoại, trạng thái và vị trí `UX01`–`UX04`, chụp 1–2 ảnh thật để gắn vào §5; sau đó mới chấm thực tế. Hiện chưa xác minh được cơ chế chặn nhiều lượt, duyệt đúng phiên bản và trạng thái khi chuyển/đăng lỗi.
+**Lỗi tìm thấy và sửa:** (1) nút đăng FAQ ban đầu chưa nối handler, làm nhánh đăng không chạy — đã nối và kiểm lỗi/thành công/bấm lặp; (2) bản chuyển có thể đính kèm fixture sau khi tra cứu đang lỗi — đã chuyển về câu hỏi chung không kèm nguồn chưa đọc, kiểm `FAILURES`; (3) lời thoại dựng sẵn chưa phân biệt câu hỏi lặp sau khi FAQ đã đăng và chưa áp dụng lỗi trang khoá học cho câu hỏi lịch học/giờ TA — đã bổ sung nhánh trạng thái và kiểm lại `S05-C3-FAQ`, `FAILURES`. Bộ kiểm cũng được sửa lỗi escape chuỗi trước khi ghi kết quả cuối. Đã chạy lại toàn bộ 15 nhóm kiểm sau sửa; không còn lỗi được ghi nhận trong các nhánh đó.
+
+**Chưa kiểm / cần nhóm làm tiếp:** Người 1 đối chiếu và chốt quyền, Người 2 bấm kiểm chéo lời thoại/nguyên tắc; thử ca lạ thật tại demo; khả năng hiểu câu tự do của AI thật (không có AI trong prototype); hệ thống phân quyền/lưu trữ thật (không thuộc phạm vi); repo công khai và truy cập ẩn danh. Không dùng kết quả tự động để ghi thay các sự kiện này.
 
 ## §7. Demo
 
-Chưa demo. [CẦN NHÓM ĐIỀN kịch bản dự kiến và phân vai; sau demo ghi ca lạ và kết quả thực tế.]
+**Chưa demo trước lớp/TA.** Các bước dưới là kịch bản tập dự kiến, không phải biên bản đã diễn ra.
+
+| Người | Phần trình bày dự kiến | Thao tác / điều cần giải thích |
+|---|---|---|
+| Lê Nhật Linh — Người 1 | Khoảng 30 giây | Giới thiệu lát cắt, lý do đề xuất S05/S03, quyền khó xếp `goi_y_bai_tap` và cái giá của sai/chờ. Chỉ nói quyết định đã chốt khi nhóm xác nhận thật. |
+| Trần Quốc Đông — Người 2 | Khoảng 45 giây | Đọc câu S05, chỉ 01 (G10/G11), 02 (G9), giải thích vì sao có nguồn vẫn cần kiểm và ai được báo khi nào. |
+| Nguyễn Đắc Thể — Người 3 | Khoảng 2 phút | Bấm luồng S05 §5.2: nguồn → đổi tóm tắt → xác nhận → hàng chờ → TA duyệt → sửa để mất duyệt → duyệt lại → đăng mô phỏng. Reset, mở S03, thử xin thêm bước/xác nhận/FAQ để chỉ giới hạn. Nói rõ không có AI, TA hay bài đăng thật. |
+| Cả nhóm | Theo thời lượng giảng viên | Nhận ca lạ, xác định nguồn/quyền, bấm hoặc giải thích đường đi. Nếu ngoài khả năng demo, nói rõ fallback, không giả vờ mô hình đã hiểu. |
+
+**Biên bản cần điền sau demo:**
+
+| Nội dung thực tế | Ghi nhận |
+|---|---|
+| Thời điểm, người tham gia demo | [CẦN NHÓM ĐIỀN SAU DEMO] |
+| Ca lạ nguyên văn, ai đưa | [CẦN NHÓM ĐIỀN SAU DEMO] |
+| Prototype đã làm / nhóm đã nói | [CẦN NHÓM ĐIỀN SAU DEMO] |
+| Đúng/chưa đúng ở nguồn, lời thoại, quyền nào | [CẦN NHÓM ĐIỀN SAU DEMO] |
+| Nhóm đổi ý hoặc sửa gì; kết quả kiểm lại | [CẦN NHÓM ĐIỀN SAU DEMO] |
+| Từng thành viên đã giải thích phần mình | [CẦN NHÓM XÁC NHẬN SAU DEMO] |
+
+Rà tích hợp và các việc thực tế còn thiếu: [work/kiem-tra-spec.md](work/kiem-tra-spec.md). Bàn giao Người 3: [work/nguoi-3.md](work/nguoi-3.md).

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Prototype LAB5 T2: trợ lý học bài có nguồn và giới hạn tự chủ. Dữ liệu, TA và FAQ đều mô phỏng.">
+  <title>Học đúng · Trợ lý buổi 3</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="fixtures.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="simulation"><span class="live-dot"></span> PROTOTYPE MÔ PHỎNG <span class="sim-detail">· Không có AI, TA hay bài đăng thật · Quyền đang là dự thảo</span><span class="clock">23:00 · 12/11/2026 · GMT+7 (cố định)</span></div>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html"><span class="brand-symbol">h.</span> học đúng<span class="brand-dot">®</span></a>
+      <p class="eyebrow">KHÔNG GIAN HỌC TẬP</p>
+      <h2>Nhập môn<br>phân tích dữ liệu</h2>
+      <p class="sidebar-note">Buổi 3 / 10 · Học bằng bảng tính</p>
+      <div class="course-list">
+        <div><span>01</span> Buổi 1 <small>Đã mở*</small></div>
+        <div><span>02</span> Buổi 2 <small>Đã mở*</small></div>
+        <div class="current"><span>03</span> Thống kê mô tả <small>Đang học</small></div>
+      </div>
+      <p class="tiny">*Chỉ có nội dung buổi 3 trong fixture; không tự dựng học liệu buổi 1–2.</p>
+      <details class="future"><summary>Đề cương buổi sau</summary><div id="future-list"></div></details>
+      <div class="side-bottom">
+        <div class="moon">☾</div><strong>Học tối muộn,<br>vẫn có đường tiếp.</strong>
+        <p>TA trực 08:00–22:00.<br>Ngoài giờ chỉ vào hàng chờ mô phỏng; chưa có giờ trả lời xác nhận.</p>
+        <details class="controls"><summary>Điều khiển mô phỏng</summary>
+          <label><input id="fail-source" type="checkbox"> Không đọc được học liệu</label>
+          <label><input id="fail-course" type="checkbox"> Không đọc được trang khoá học</label>
+          <label><input id="fail-transfer" type="checkbox"> Lỗi lần chuyển TA tiếp theo</label>
+          <label><input id="fail-publish" type="checkbox"> Lỗi lần đăng FAQ tiếp theo</label>
+        </details>
+        <button id="reset" class="reset">↻ Bắt đầu lại</button>
+        <p class="tiny">L3A · Zone 1 · LAB5 / T2</p>
+      </div>
+    </aside>
+    <main>
+      <header class="topbar"><span>Khoá học <span class="slash">/</span> Buổi 03 <span class="slash">/</span> <strong>Trợ lý học bài</strong></span><span class="avatar" aria-label="Học viên mô phỏng">HV</span></header>
+      <section class="page-heading"><div><p class="eyebrow">CÓ NGUỒN. CÓ GIỚI HẠN.</p><h1>Hiểu bài, từng bước<span>.</span></h1><p>Kiểm tra điều chưa rõ. Giữ phần tự học cho bạn.</p></div><div class="view-switch" role="group" aria-label="Vai trò mô phỏng"><button id="student-tab" class="active" aria-pressed="true">Học viên</button><button id="ta-tab" aria-pressed="false">Đóng vai TA <span id="queue-count">0</span></button></div></section>
+      <div id="student-view">
+        <div class="assignment" id="UX04"><span class="marker">04</span><div><strong>Bài 3 <span class="pill">Đang mở</span></strong><p>Hạn 13/11/2026 · 23:59 <span class="muted">— Nguồn: trang khoá học</span></p></div><span class="assignment-limit">Tự làm: chỉ gợi ý bước đầu</span><button class="text-button" data-source="course">Xem nguồn ↗</button></div>
+        <div class="student-grid">
+          <section class="panel chat-panel" aria-label="Cuộc trò chuyện">
+            <div class="panel-title"><div><span class="mini-icon">✦</span><strong>Trợ lý buổi 3</strong></div><span class="muted small">Câu trả lời dựng sẵn</span></div>
+            <div class="scenario-bar"><button data-case="S05">S05 · Học liệu có sai?</button><button data-case="S03">S03 · Xin giải bài mở</button><button data-case="normal">Câu hỏi bình thường</button></div>
+            <div id="messages" class="messages" role="log" aria-live="polite"></div>
+            <div class="followups" id="followups" aria-label="Thử gửi yêu cầu tiếp theo của học viên"><button data-case="more">Xin thêm bước</button><button data-case="S04">Thử xin xác nhận</button><button data-case="comment">Xin nhận xét hộ</button><button data-case="faq">Xin đưa lên FAQ</button><button data-case="correction">Sửa lời giải thích</button><button data-case="B2">Tôi hỏi bài 2</button></div>
+            <form id="chat-form"><label class="sr-only" for="chat-input">Câu hỏi trong phạm vi demo</label><input id="chat-input" maxlength="600" placeholder="Thử câu hỏi… (demo nhận diện một số ý định)"><button type="submit" aria-label="Gửi câu hỏi">↑</button></form>
+            <p class="input-note">Demo theo kịch bản, không phải AI tổng quát. Câu lạ sẽ được hỏi lại.</p>
+          </section>
+          <aside class="evidence-column">
+            <section class="panel evidence" id="UX01"><div class="panel-title"><div><span class="marker">01</span><strong>Bằng chứng trước kết luận</strong></div></div><div id="source-content"></div></section>
+            <section class="panel transfer" id="UX02"><div class="panel-title"><div><span class="marker">02</span><strong>Bạn quyết định gửi gì</strong></div><span class="small muted">Cần học viên duyệt</span></div><div class="panel-body"><p class="small">TA chỉ thấy bản tóm tắt bạn đã xem và xác nhận. Không tự chuyển cả lịch sử chat.</p><button id="prepare" class="primary">Chuẩn bị câu hỏi cho TA →</button><div id="transfer-preview" hidden><label for="summary">Bản xem trước · Nơi nhận: TA mô phỏng</label><textarea id="summary" rows="3" maxlength="800"></textarea><button id="rewrite" class="text-button">Đổi sang câu hỏi dễ hiểu hơn</button><p class="tiny muted">Demo chỉ chuyển các mẫu câu hỏi cách học an toàn. Sửa ngoài mẫu sẽ chưa được gửi; nguồn gốc được đính kèm riêng.</p><p id="summary-validation" class="small"></p><div id="transfer-sources" class="tiny"></div><div class="button-row"><button id="confirm-transfer" class="primary">Xác nhận chuyển TA</button><button id="cancel-transfer" class="secondary">Không gửi</button></div></div><p id="transfer-status" class="status" role="status"></p></div></section>
+          </aside>
+        </div>
+      </div>
+      <div id="ta-view" hidden>
+        <div class="ta-notice"><strong>Vai TA trong cùng trình duyệt · chỉ mô phỏng</strong><span>Chuyển vai để thử luồng duyệt; không phải hệ thống phân quyền thật.</span></div>
+        <div class="ta-grid">
+          <section class="panel"><div class="panel-title"><strong>Hàng chờ đã được xác nhận</strong><span class="pill">08:00–22:00</span></div><div id="queue" class="panel-body"></div></section>
+          <section class="panel" id="UX03"><div class="panel-title"><div><span class="marker">03</span><strong>Duyệt đúng bản trước khi đăng</strong></div></div><div class="panel-body"><p class="small muted">Phạm vi: FAQ cả lớp mô phỏng. Sửa nội dung làm mất lượt duyệt cũ.</p><div id="faq-empty" class="empty">Chọn câu S05 đã vào hàng chờ để tạo bản xem trước. Chưa có nội dung công khai.</div><div id="faq-editor" hidden><label for="faq-question">Câu hỏi</label><textarea id="faq-question" rows="2" maxlength="400"></textarea><label for="faq-answer">Câu trả lời đề xuất</label><textarea id="faq-answer" rows="7" maxlength="1000"></textarea><button id="rewrite-faq" class="text-button">Dùng bản diễn đạt thận trọng hơn</button><div class="source-label">Nguồn cố định: học liệu buổi 3 · §3.3</div><blockquote id="faq-source"></blockquote><p id="faq-validation" class="small"></p><p id="approval-state" class="approval-state"></p><div class="button-row"><button id="approve" class="primary">TA mô phỏng duyệt bản này</button><button id="reject" class="secondary">Từ chối</button></div><button id="publish" class="primary publish">Đăng FAQ đã duyệt</button></div><p id="faq-status" class="status" role="status"></p></div></section>
+        </div>
+      </div>
+      <section class="panel public-faq"><div class="panel-title"><strong>FAQ lớp <span class="muted small">/ Mô phỏng</span></strong><span id="public-count" class="small muted">0 bài công khai</span></div><div id="public-faq" class="panel-body small">Chưa có FAQ được công bố. Bản xem trước không hiển thị cho lớp.</div></section>
+      <details class="audit"><summary>Nhật ký tool mô phỏng <span id="audit-count">(0)</span></summary><ol id="audit-log"></ol></details>
+      <footer>LAB5 · T2 GIÁO DỤC <span>Nguyễn Đắc Thể · 2A202603529</span></footer>
+    </main>
+  </div>
+</body>
+</html>

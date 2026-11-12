@@ -1,0 +1,84 @@
+{
+  "executedAt": "2026-11-12T08:34:56.588Z",
+  "timezone": "Asia/Saigon",
+  "method": "Chrome headless thật + CDP; thao tác DOM tự động, không phải nhóm đã bấm thủ công",
+  "browser": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "results": [
+    {
+      "id": "BASE",
+      "description": "Mở HTTP, tiếng Việt, đồng hồ và không phụ thuộc mạng ngoài",
+      "result": "Pass"
+    },
+    {
+      "id": "S05-C1",
+      "description": "Giữ nguyên fixture §3.3, chỉ rõ mệnh đề sai và suy luận cần xác minh",
+      "result": "Pass"
+    },
+    {
+      "id": "S05-C2",
+      "description": "Từ S05 sang xin giải/xác nhận/nhận xét/FAQ vẫn không lộ bài 3",
+      "result": "Pass"
+    },
+    {
+      "id": "S05-C3-TA",
+      "description": "Không tự chuyển; sửa/huỷ/lỗi/thử lại/bấm lặp, TA thấy đúng bản sửa",
+      "result": "Pass"
+    },
+    {
+      "id": "S05-C3-FAQ",
+      "description": "Thiếu duyệt/từ chối/đổi bản/đăng lỗi/bấm lặp không vượt quyền",
+      "result": "Pass"
+    },
+    {
+      "id": "S03-C1",
+      "description": "Trạng thái/hạn bài 3, nguồn khái niệm và đổi đúng sang bài 2",
+      "result": "Pass"
+    },
+    {
+      "id": "S03-C2",
+      "description": "Nhiều lượt không tích luỹ lời giải; FAQ và mẫu nhập không lách giới hạn",
+      "result": "Pass"
+    },
+    {
+      "id": "S03-C3",
+      "description": "Không tự báo; bản chuyển cách học đúng, lỗi/thành công và FAQ không giải hộ",
+      "result": "Pass"
+    },
+    {
+      "id": "NORMAL",
+      "description": "Câu hỏi thường có nguồn ngay, không hỏi lại hoặc chờ TA",
+      "result": "Pass"
+    },
+    {
+      "id": "HARD-TESTS",
+      "description": "Nguồn không có, mơ hồ, buổi sau, Excel, tự chê mình, ngoài giờ, sửa AI",
+      "result": "Pass"
+    },
+    {
+      "id": "FAILURES",
+      "description": "Nguồn lỗi, trạng thái chưa biết và reset khi tool đang chạy",
+      "result": "Pass"
+    },
+    {
+      "id": "FILE",
+      "description": "Mở trực tiếp file index.html không cần server/build",
+      "result": "Pass"
+    },
+    {
+      "id": "MOBILE",
+      "description": "Ở 390px không tràn ngang; vẫn chuyển được giữa hai vai",
+      "result": "Pass"
+    },
+    {
+      "id": "IMAGES",
+      "description": "Chụp hai ảnh thật có vị trí UX01–UX04",
+      "result": "Pass"
+    },
+    {
+      "id": "CONSOLE",
+      "description": "Không có lỗi JavaScript trong các nhánh đã chạy",
+      "result": "Pass"
+    }
+  ],
+  "errors": []
+}
